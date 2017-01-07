@@ -32,7 +32,7 @@ export const App = React.createClass({
 					]} 
 				/> 
 				<AppNav />
-				<div style={{ minHeight: 'calc(100vh - 75px)' }}>{this.props.children}</div>
+				<div>{this.props.children}</div>
 				<AppFooter />
 			</div>
 		);
