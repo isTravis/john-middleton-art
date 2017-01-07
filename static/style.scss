@@ -1,0 +1,122 @@
+$mobileWidth: 767px;
+
+body {
+	max-width: calc(800px + 2em);
+	padding: 0em 1em;
+	margin: 0 auto;
+	font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif, "Icons16";
+}
+
+.header-wrapper {
+	display: table;
+	width: 100%;
+	margin: 1em 0em;
+	@media screen and (max-width: $mobileWidth) {
+		display: block;
+	}
+}
+
+.header-title {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid black;
+	letter-spacing: 6px;
+    line-height: 1.8em;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 14px;
+    display: table-cell;
+    white-space: nowrap;
+    width: 1%;
+    &:hover {
+    	background-color: #F9F9F9;
+    }
+    &:active {
+    	transform: translateY(1px);
+    }
+    @media screen and (max-width: $mobileWidth) {
+		display: block;
+		width: 240px;
+		margin: 2em auto 1em;
+	}
+}
+
+.header-nav {
+	display: table-cell;
+	text-align: right;
+	font-size: 0.85em;
+	@media screen and (max-width: $mobileWidth) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-size: 0.95em;
+	}
+}
+
+.header-nav-item {
+	color: #656565;
+	padding-left: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	&:hover {
+		text-decoration: underline;
+		color: #000;
+	}
+	@media screen and (max-width: $mobileWidth) {
+		padding: 1em;
+	}
+}
+
+.landing-statement {
+	position: relative;
+	text-align: center;
+	background-color: #EFEFEF;
+	margin: 3em 0em;
+	padding: 2em 0em
+}
+
+.landing-image-container {
+	margin: 0em 0em 4em;
+	padding: 4em 0em 0em;
+	border-top: 1px solid #EEE;
+	
+}
+
+.portfolio-wrapper {
+	margin: 4em 0em;
+}
+
+.image-wrapper {
+
+}
+.image {
+	// box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px rgba(16, 22, 26, 0.2);
+	border-radius: 2px;
+	max-height: 85vh;
+	max-width: 100%;
+}
+.image-title {
+
+}
+.image-caption {
+	font-family: 'serif';
+}
+
+.footer {
+	margin: 1em 0em 3em;
+	padding-top: 2em;
+	text-align: center;
+	border-top: 1px solid #EEE;
+}
+
+.footer-link {
+	color: #656565;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+		color: #000;
+	}
+}
