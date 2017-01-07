@@ -20,15 +20,14 @@ export const App = React.createClass({
 						{ property: 'og:type', content: 'website' },
 						{ property: 'og:description', content: 'John Middleton\'s Art' },
 						{ property: 'og:url', content: 'https://www.johnmiddletonart.com/' },
-						{ property: 'og:image', content: 'https://www.listoflinks.co/static/logo_large.png' },
-						{ property: 'og:image:url', content: 'https://www.listoflinks.co/static/logo_large.png' },
-						{ property: 'og:image:width', content: '500' },
+						{ property: 'og:image', content: 'https://johnmiddletonart.com/static/logo.png' },
+						{ property: 'og:image:url', content: 'https://johnmiddletonart.com/static/logo.png' },
+						{ property: 'og:image:width', content: '350' },
 						{ name: 'twitter:card', content: 'summary' },
-						{ name: 'twitter:site', content: '@listoflinks' },
-						{ name: 'twitter:title', content: 'List of Links' },
-						{ name: 'twitter:description', content: 'A simple tool testing PubPub v3' },
-						{ name: 'twitter:image', content: 'https://www.listoflinks.co/static/logo_large.png' },
-						{ name: 'twitter:image:alt', content: 'Logo for List of Links' }
+						{ name: 'twitter:title', content: 'John Middleton Art' },
+						{ name: 'twitter:description', content: 'Showcasing John Middleton\'s art' },
+						{ name: 'twitter:image', content: 'https://johnmiddletonart.com/static/logo.png' },
+						{ name: 'twitter:image:alt', content: 'Logo for John Middleton Art' }
 					]} 
 				/> 
 				<AppNav />
