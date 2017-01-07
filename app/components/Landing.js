@@ -9,7 +9,7 @@ export const Landing = React.createClass({
 		return (
 			<div>
 				<div className={'landing-statement'}>
-					This is the artist's statment.
+					Text blurb here. You can say whatever you like!
 				</div>
 				
 				{items.map((item)=> {

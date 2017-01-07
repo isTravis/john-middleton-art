@@ -39,7 +39,7 @@ body {
     @media screen and (max-width: $mobileWidth) {
 		display: block;
 		width: 240px;
-		margin: 2em auto 1em;
+		margin: 4em auto 3em;
 	}
 }
 
@@ -66,7 +66,7 @@ body {
 		color: #000;
 	}
 	@media screen and (max-width: $mobileWidth) {
-		padding: 1em;
+		padding: 1em 0.5em;
 	}
 }
 
