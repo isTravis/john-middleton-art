@@ -78,6 +78,18 @@ body {
 	padding: 2em 0em
 }
 
+.landing-statement-content {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+}
+
+.landing-statement-poem {
+	white-space: pre;
+	font-style: italic;
+	padding: 1em 0em;
+	line-height: 1.6;
+}
 .landing-image-container {
 	margin: 0em 0em 4em;
 	padding: 4em 0em 0em;
@@ -103,6 +115,16 @@ body {
 }
 .image-caption {
 	font-family: 'serif';
+}
+
+h2.content-title {
+	margin: 2em 0em;
+}
+
+p.content {
+	margin: 3em 0em;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 .not-found-wrapper {
