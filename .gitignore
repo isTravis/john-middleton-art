@@ -1,6 +1,7 @@
+dist
 node_modules
+misc
 .DS_Store
-dist/*
 *.log
 npm-debug.log
 stats.json

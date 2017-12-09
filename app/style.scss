@@ -111,10 +111,14 @@ body {
 	max-width: 100%;
 }
 .image-title {
-
+	font-style: italic;
+	font-weight: bold;
+}
+.image-year {
+	font-style: normal;
 }
 .image-caption {
-	font-family: 'serif';
+	// font-family: 'serif';
 }
 
 h2.content-title {

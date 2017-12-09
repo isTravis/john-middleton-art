@@ -1,27 +1,26 @@
-import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
-import content from '../content';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Image from './Image';
+import content from '../content';
 
-export const Portfolio = React.createClass({
-	propTypes: {
-		params: PropTypes.object,
-	},
+const propTypes = {
+	match: PropTypes.object.isRequired,
+};
 
-	render() {
-		const params = this.props.params || {};
-		const items = content || [];
-		const feature = items.reduce((previous, current)=> {
-			if (current.id === Number(params.id)) { return current; }
-			return previous;
-		}, undefined);
-		return (
-			<div className={'portfolio-wrapper'}>
-				<Image image={feature} />
-			</div>
-		);
-	}
-});
+const Portfolio = function(props) {
+	const imageId = props.match.params.id;
+	const items = content || [];
+	const feature = items.reduce((previous, current)=> {
+		if (current.id === Number(imageId)) { return current; }
+		return previous;
+	}, undefined);
 
+	return (
+		<div className={'portfolio-wrapper'}>
+			<Image image={feature} />
+		</div>
+	);
+};
 
+Portfolio.propTypes = propTypes;
 export default Portfolio;
