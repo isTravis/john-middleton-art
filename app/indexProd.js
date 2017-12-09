@@ -26,6 +26,16 @@ export default function(locals) {
 		${helmet.title.toString().replace(regexp, '')}
 		${helmet.meta.toString().replace(regexp, '')}
 		${helmet.link.toString().replace(regexp, '')}
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110926016-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110926016-1');
+		</script>
 	</head>
 	<body>
 		${app}
