@@ -20,6 +20,14 @@ const Image = function(props) {
 			src={`/images/${image.filename}`}
 		/>
 	);
+	const titleComponent = (
+		<div className={'image-title'}>
+			{image.title}
+			{image.year &&
+				<span className={'image-year'}>, {image.year}</span>
+			}
+		</div>
+	);
 
 	return (
 		<div className={'image-wrapper'}>
@@ -29,12 +37,14 @@ const Image = function(props) {
 				</Link>
 			}
 			{!props.hasLink && imageComponent}
-			<div className={'image-title'}>
-				{image.title}
-				{image.year &&
-					<span className={'image-year'}>, {image.year}</span>
-				}
-			</div>
+
+			{props.hasLink &&
+				<Link to={`/portfolio/${image.id}`} className={'image-title-link'}>
+					{titleComponent}
+				</Link>
+			}
+			{!props.hasLink && titleComponent}
+
 			<div className={'image-caption'}>{image.caption}</div>
 		</div>
 	);

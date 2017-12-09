@@ -75,7 +75,7 @@ body {
 	text-align: center;
 	background-color: #EFEFEF;
 	margin: 3em 0em;
-	padding: 2em 0em
+	padding: 2em 1em;
 }
 
 .landing-statement-content {
@@ -87,8 +87,8 @@ body {
 .landing-statement-poem {
 	white-space: pre;
 	font-style: italic;
+	line-height: 1.2;
 	padding: 1em 0em;
-	line-height: 1.6;
 }
 .landing-image-container {
 	margin: 0em 0em 4em;
@@ -110,9 +110,17 @@ body {
 	max-height: 85vh;
 	max-width: 100%;
 }
+.image-title-link {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		text-decoration: underline;
+	}
+}
 .image-title {
 	font-style: italic;
 	font-weight: bold;
+	text-decoration: none;
 }
 .image-year {
 	font-style: normal;
