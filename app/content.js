@@ -87,4 +87,11 @@ export default [
 		year: '2013',
 		caption: 'Cherry, poplar, pine, paint, found objects Each element 18x18x3"'
 	},
+	{
+		id: 14,
+		filename: 'image14.jpg',
+		title: '',
+		year: '2019',
+		caption: ''
+	},
 ];

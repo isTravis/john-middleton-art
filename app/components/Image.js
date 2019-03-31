@@ -23,9 +23,8 @@ const Image = function(props) {
 	const titleComponent = (
 		<div className={'image-title'}>
 			{image.title}
-			{image.year &&
-				<span className={'image-year'}>, {image.year}</span>
-			}
+			{!!image.title && !!image.year && <span>, </span>}
+			<span className={'image-year'}>{image.year}</span>
 		</div>
 	);
 
